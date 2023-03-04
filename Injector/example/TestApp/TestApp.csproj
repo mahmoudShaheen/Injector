@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Injector\Injector.csproj" />
+    <ProjectReference Include="..\..\src\Injector\Injector.csproj" />
     <ProjectReference Include="..\TestAppServices\TestAppServices.csproj" />
   </ItemGroup>
 
