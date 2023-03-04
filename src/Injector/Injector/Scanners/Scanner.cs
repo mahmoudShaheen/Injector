@@ -6,7 +6,7 @@ namespace Injector.Scanners
 {
     internal class Scanner : IScanner
     {
-        public Scanner(InjectorConfig config)
+        internal Scanner(InjectorConfig config)
         {
         }
 

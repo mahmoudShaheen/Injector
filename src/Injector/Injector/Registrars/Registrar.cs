@@ -20,9 +20,9 @@ namespace Injector.Registrars
 
         void IRegistrar.Register(IEnumerable<Type> injectables)
         {
-            if(_config.RegisterServices)
+            if (_config.RegisterServices)
                 RegisterServices(injectables);
-            
+
             if (_config.RegisterHostedServices)
                 RegisterHostedServices(injectables);
         }
@@ -63,7 +63,7 @@ namespace Injector.Registrars
                 if (genericType == null)
                     Register(new ServiceDescriptor(type, type, serviceLifetime));
                 else
-                    Register(new ServiceDescriptor(type, genericType, serviceLifetime));
+                    Register(new ServiceDescriptor(genericType, type, serviceLifetime));
             }
         }
 

@@ -1,5 +1,4 @@
-﻿using Injector.Contracts;
-using System.Reflection;
+﻿using System.Reflection;
 
 namespace Injector.Scanners
 {

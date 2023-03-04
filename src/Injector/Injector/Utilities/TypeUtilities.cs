@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace Injector.Utilities
+﻿namespace Injector.Utilities
 {
     internal static class TypeUtilities
     {
@@ -15,7 +13,7 @@ namespace Injector.Utilities
                 .GetInterfaces()?
                 .Where(i => i.IsGenericType && i.GetGenericTypeDefinition() == interfaceType)?
                 .SelectMany(i => i.GetGenericArguments())?
-                .Single();
+                .FirstOrDefault();
         }
     }
 }

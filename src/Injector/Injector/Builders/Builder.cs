@@ -11,7 +11,7 @@ namespace Injector.Builders
         private readonly IRegistrar _registrar;
         private readonly HashSet<Assembly> _scannedAssemblies;
 
-        public Builder(IScanner scanner, IRegistrar registerar, InjectorConfig config)
+        internal Builder(IScanner scanner, IRegistrar registerar, InjectorConfig config)
         {
             _scanner = scanner;
             _registrar = registerar;
@@ -27,9 +27,9 @@ namespace Injector.Builders
             // Scan Assembly for Types that implements Injectable
             _scannedAssemblies.Add(assemblyMarkerType.Assembly);
             var injectables = _scanner.Scan(assembly);
-            
+
             // Register Found Types
-            if(injectables != null && injectables.Any())
+            if (injectables != null && injectables.Any())
                 _registrar.Register(injectables);
 
             return this;
