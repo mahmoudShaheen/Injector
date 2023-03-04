@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Injector.Contracts\Injector.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>
