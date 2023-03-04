@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>MoShaheen.$(AssemblyName)</PackageId>
+    <Title>$(AssemblyName)</Title>
+    <Authors>Shaheen</Authors>
+    <PackageProjectUrl>https://github.com/mahmoudShaheen/Injector</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mahmoudShaheen/Injector</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>.Net;DI;IOC;Injector;Injector.Contracts;DependencyInjection;InversionOfControl;Dependency Injection;Inversion Of Control;</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Description>Contracts For Injector Package.</Description>
+    <Copyright>All Rights Reserved.</Copyright>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
