@@ -3,11 +3,11 @@
 Part of [MoQa](https://moqa.moshaheen.com/) Project  
 
 Version:  
-	- [Injector 1.0.0](https://www.nuget.org/packages/MoShaheen.Injector/1.0.0)  
-	- [Injector.Contracts 1.0.0](https://www.nuget.org/packages/MoShaheen.Injector.Contracts/1.0.0)  
+	- [Injector](https://www.nuget.org/packages/MoShaheen.Injector/)  
+	- [Injector.Contracts](https://www.nuget.org/packages/MoShaheen.Injector.Contracts/)  
 Author: [Mahmoud Shaheen](https://www.moshaheen.com/)
 ## Links:
-[Download](https://www.nuget.org/packages/MoShaheen.Injector/1.0.0)  
+[Download](https://www.nuget.org/packages/MoShaheen.Injector/)  
 [Website](https://github.com/mahmoudShaheen/Injector)  
 [Github](https://github.com/mahmoudShaheen/Injector)  
 
