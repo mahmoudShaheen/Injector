@@ -14,7 +14,8 @@ namespace Injector.Scanners
         {
             var type = typeof(Injectable);
             return assembly.GetTypes()
-                .Where(t => type.IsAssignableFrom(t));
+                .Where(t => !t.GetTypeInfo().IsAbstract)
+                .Where(t=> type.IsAssignableFrom(t));
         }
     }
 }
